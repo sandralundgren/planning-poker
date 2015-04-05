@@ -6,8 +6,6 @@ $( document ).ready(function()  {
 
 		document.getElementById('phaseTitle').innerHTML = "<h2>2. Waiting Phase</h2>";
 
-  		// alert(this.id); // alerts the id of the one that is clicked on
-
         var cardClicked = "idNumber"; // initializing the variable with dummy content
 
         cardClicked = this.id; // gets the id of the card that is clicked on
@@ -45,7 +43,7 @@ $( document ).ready(function()  {
 
 			$('.cards').fadeIn("fast"); 
 
-			// i also need to toggle whatever card was revealed back to cardback state!
+			// Toggles whatever card was revealed back to cardback state
 
 			if ($('#' + cardClicked).attr("src") === "images/frontcard" + cardClicked + ".jpg") {
 
@@ -59,12 +57,7 @@ $( document ).ready(function()  {
 		});
 
 
-
-
 	}); // card click
-
-
-
 
 
 });
