@@ -27,10 +27,7 @@ $( document ).ready(function()  {
 
 				$('#' + cardClicked).attr("src", "images/frontcard" + cardClicked + ".jpg");
 
-			} else {
-
-				$('#' + cardClicked).attr("src", "images/cardback.jpg");
-			}
+			} 
 			
 		});
 

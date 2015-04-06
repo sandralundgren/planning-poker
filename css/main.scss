@@ -58,14 +58,17 @@ body {
 	background-image: $buttonsGradient;
 	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4),0 1px 3px 1px rgba(0,0,0,0.4);
 	border-radius: 3px;
+	width: 8em;
+
+		&:hover, &:focus {
+			color: white;
+			background-image: $buttonsGradientHover;
+			background-position: 0; // overrides the bootstrap default
+		}
 
 }
 
-.btn-default:hover, .btn-default:focus {
-	  color: white;
-	  background-image: $buttonsGradientHover;
-	  background-position: 0; // overrides the bootstrap default
-}
+
 
 // Responsive resizing
 
@@ -75,14 +78,29 @@ body {
 	body {
 		padding-top: 50px;
 	}
+	
+	.navbar {
+	    height: 50px;
+	}
+
+	#theTitle { 
+    	line-height: 20px;
+	}
+
+	#phaseTitle {
+		font-size: 80%;
+	}
+
 	.cards {
 		width: 30%;
 		height: auto;
 	}
 
-	.navbar {
-	    height: 50px;
+	#cardsContainer {
+		margin-top: 2em;
+		text-align: center;
 	}
+
 
 }
 
