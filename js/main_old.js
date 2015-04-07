@@ -4,21 +4,20 @@ $( document ).ready(function()  {
 
 		$('#intro').hide();
 
-	    var cardClicked = "idNumber"; // initializing the variable with dummy content
+		$('.theButtons').fadeIn();
+
+		//document.getElementById('phaseTitle').innerHTML = "<h2>Waiting Phase</h2>";
+
+        var cardClicked = "idNumber"; // initializing the variable with dummy content
 
         cardClicked = this.id; // gets the id of the card that is clicked on
 
-        var _this = $(this);
+  		$('.cards').slideUp("fast"); // Slide up all the cards
 
-        $('.cards').not(_this).slideUp("fast"); // slide up all of the cards except the one clicked on
-
-
-		$('.theButtons').fadeIn();
-
-		document.getElementById('phaseTitle').innerHTML = "<h2>Waiting Phase</h2>";
+  		$('#' + cardClicked).fadeIn("fast"); // Fade back in only the one that was clicked on
 
 
-		 // Reveal card button listener
+        // Reveal card button listener
 
 		$('#revealCard').click(function () {
 
@@ -35,7 +34,7 @@ $( document ).ready(function()  {
 		});
 
 
-		// Reset button listener. Whenever the "Start Over" button is clicked on, all the cards fade back in.
+		// Reset button listener. Whenever the Start over button is clicked on, all the cards fade back in.
 
 		$('#startOver').click(function () {
 
@@ -53,6 +52,7 @@ $( document ).ready(function()  {
 
 			document.getElementById('phaseTitle').innerHTML = "<h2>Select Phase</h2>";
 
+
 		});
 
 
@@ -60,3 +60,6 @@ $( document ).ready(function()  {
 
 
 });
+
+
+

@@ -1,17 +1,25 @@
 // Variables 
 
+$navbarPattern: url("../images/dark-grunge-texture-.35.png"),linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 82%,rgba(255,255,255,0.06) 94%,rgba(255,255,255,0) 100%),linear-gradient(to bottom, #525252 0%,#0c0c0c 100%);
+
+$bodyBackground: url("../images/light-grunge-texture-.50.png") 0 0 repeat,#dee1e2;
+
 $buttonsGradient: linear-gradient( rgba(255,255,255,0.28) 0%,rgba(255,255,255,0.28) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%),url("../images/dark-grunge-texture-.35.png"), linear-gradient( #14e7f5,#02679d);
 
 $buttonsGradientHover: linear-gradient( rgba(255,255,255,0.28) 0%,rgba(255,255,255,0.28) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%),url("../images/dark-grunge-texture-.35.png"), linear-gradient( #33f2ff,#0082c8);
 
-$navbarPattern: url("../images/dark-grunge-texture-.35.png"),linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 82%,rgba(255,255,255,0.06) 94%,rgba(255,255,255,0) 100%),linear-gradient(to bottom, #525252 0%,#0c0c0c 100%);
+$buttonsShadow: inset 0 0 0 1px rgba(255,255,255,0.4),0 1px 3px 1px rgba(0,0,0,0.4);
+
+$buttonWidth: 8em;
+
+$fontAccent: 'Ropa Sans','Helvetica', sans-serif; 
 
 
 body {
 	font-family: 'Abel', 'Helvetica', sans-serif; 
     padding-top: 70px;
     padding-bottom: 20px;
-    background: url("../images/light-grunge-texture-.50.png") 0 0 repeat,#dee1e2;
+    background: $bodyBackground;
 }
 
 .navbar {
@@ -20,16 +28,36 @@ body {
 }
 
 #theTitle { 
-	font-family: 'Abel','Helvetica', sans-serif; 
+	font-family: $fontAccent; 
     font-size: 110%;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
     line-height: 40px;
+    letter-spacing: 2px;
+    margin-left: 2.5em;
 }
 
-#phaseTitle > p {
+#intro {
+	margin-left: 3.5em;
+
+	& > p {
 	font-size: 130%;
+	}
+
+}
+
+#phaseTitle {
+	margin-top: 3em;
+	font-family: $fontAccent; 
+    font-size: 80%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+	& > h2 {
+	font-size: 220%;
+	}
 }
 
 #cardsContainer {
@@ -41,24 +69,24 @@ body {
 	margin-bottom: 1em;
 	border-radius: 15px;
 	box-shadow: 0 3px 3px rgba(0,0,0,0.6);
-}
-
+}	
+		 
 .row > .theButtons {
 	display: none;
     margin-top: 2em;
 }
 
 .btn-default {
-    font-family: 'Abel';
+    font-family: $fontAccent;
     font-size: 150%;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
     text-shadow: 0 1px 1px rgba(0,0,0,0.6);
 	background-image: $buttonsGradient;
-	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4),0 1px 3px 1px rgba(0,0,0,0.4);
+	box-shadow: $buttonsShadow;
 	border-radius: 3px;
-	width: 8em;
+	width: $buttonWidth;
 
 		&:hover, &:focus {
 			color: white;
@@ -85,6 +113,11 @@ body {
 
 	#theTitle { 
     	line-height: 20px;
+    	margin-left: 10%;//0.8em;
+	}
+
+	#intro {
+		margin-left: 1.1em;
 	}
 
 	#phaseTitle {
@@ -100,7 +133,6 @@ body {
 		margin-top: 2em;
 		text-align: center;
 	}
-
 
 }
 

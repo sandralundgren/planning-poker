@@ -9,15 +9,29 @@ body {
   height: 70px; }
 
 #theTitle {
-  font-family: 'Abel','Helvetica', sans-serif;
+  font-family: "Ropa Sans", "Helvetica", sans-serif;
   font-size: 110%;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
-  line-height: 40px; }
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-left: 2.5em; }
 
-#phaseTitle > p {
-  font-size: 130%; }
+#intro {
+  margin-left: 3.5em; }
+  #intro > p {
+    font-size: 130%; }
+
+#phaseTitle {
+  margin-top: 3em;
+  font-family: "Ropa Sans", "Helvetica", sans-serif;
+  font-size: 80%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+  #phaseTitle > h2 {
+    font-size: 220%; }
 
 #cardsContainer {
   margin-top: 4em;
@@ -33,7 +47,7 @@ body {
   margin-top: 2em; }
 
 .btn-default {
-  font-family: 'Abel';
+  font-family: "Ropa Sans", "Helvetica", sans-serif;
   font-size: 150%;
   font-weight: 700;
   text-transform: uppercase;
@@ -56,7 +70,11 @@ body {
     height: 50px; }
 
   #theTitle {
-    line-height: 20px; }
+    line-height: 20px;
+    margin-left: 10%; }
+
+  #intro {
+    margin-left: 1.1em; }
 
   #phaseTitle {
     font-size: 80%; }
