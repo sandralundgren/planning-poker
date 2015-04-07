@@ -1,4 +1,4 @@
-$( document ).ready(function()  {
+$(document).ready(function() {
 
 	$('.cards').click(function() {
 
@@ -12,7 +12,6 @@ $( document ).ready(function()  {
 
         $('.cards').not(_this).slideUp("fast"); // slide up all of the cards except the one clicked on
 
-
 		$('.theButtons').fadeIn();
 
 		document.getElementById('phaseTitle').innerHTML = "<h2>Waiting Phase</h2>";
@@ -20,7 +19,7 @@ $( document ).ready(function()  {
 
 		 // Reveal card button listener
 
-		$('#revealCard').click(function () {
+		$('#revealCard').click(function() {
 
 			document.getElementById('phaseTitle').innerHTML = "<h2>Revealing Phase</h2>";
 
@@ -37,7 +36,7 @@ $( document ).ready(function()  {
 
 		// Reset button listener. Whenever the "Start Over" button is clicked on, all the cards fade back in.
 
-		$('#startOver').click(function () {
+		$('#startOver').click(function() {
 
 			$('.theButtons').fadeOut("fast");
 
@@ -55,8 +54,6 @@ $( document ).ready(function()  {
 
 		});
 
-
-	}); // card click
-
+	}); 
 
 });
