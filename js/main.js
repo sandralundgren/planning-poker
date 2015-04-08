@@ -14,14 +14,17 @@ $(document).ready(function() {
 
 		$('.theButtons').fadeIn();
 
-		document.getElementById('phaseTitle').innerHTML = "<h2>Waiting Phase</h2>";
+		if ($('#' + cardClicked).attr("src") === "images/cardback.jpg") {
 
+			$('#phaseTitle').html("<h2>Waiting Phase</h2>");
+
+		}
 
 		 // Reveal card button listener
 
 		$('#revealCard').click(function() {
 
-			document.getElementById('phaseTitle').innerHTML = "<h2>Revealing Phase</h2>";
+			$('#phaseTitle').html("<h2>Revealing Phase</h2>");
 
 			// swap the card image front/back 
 
@@ -50,7 +53,9 @@ $(document).ready(function() {
 
 				}
 
-			document.getElementById('phaseTitle').innerHTML = "<h2>Select Phase</h2>";
+			$('#phaseTitle').html("");
+
+		    $('#intro').fadeIn();
 
 		});
 

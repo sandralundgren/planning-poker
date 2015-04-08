@@ -2,6 +2,8 @@
 
 $tablet: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
 
+// Small smartphone
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 	body {
@@ -37,6 +39,22 @@ $tablet: "only screen and (min-device-width : 768px) and (max-device-width : 102
 
 }
 
+// Tablet
+
+@mixin phaseTitle($marginTop) {
+
+	#phaseTitle {
+		margin-top: $marginTop;
+	}
+
+}
+
+@media #{$tablet} {
+
+	@include phaseTitle(5em);
+     
+}
+
 @media #{$tablet} and (orientation : portrait) {
 
 	#theTitle { 
@@ -59,6 +77,5 @@ $tablet: "only screen and (min-device-width : 768px) and (max-device-width : 102
     .row > .theButtons {
     	margin-top: 20em;
 	}
-
 
 }

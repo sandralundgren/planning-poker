@@ -19,7 +19,9 @@ body {
   margin-left: 2.5em; }
 
 #intro {
-  margin-left: 3.5em; }
+  margin-left: 3.5em;
+  margin-top: 1em;
+  margin-bottom: -3em; }
   #intro > p {
     font-size: 130%; }
 
@@ -86,6 +88,9 @@ body {
   #cardsContainer {
     margin-top: 2em;
     text-align: center; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #phaseTitle {
+    margin-top: 5em; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #theTitle {
     line-height: 40px;
