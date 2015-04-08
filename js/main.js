@@ -13,6 +13,7 @@ $(document).ready(function() {
         $('.cards').not(_this).slideUp("fast"); // slide up all of the cards except the one clicked on
 
 		$('.theButtons').fadeIn();
+		$('#revealCard').fadeIn();
 
 		if ($('#' + cardClicked).attr("src") === "images/cardback.jpg") {
 
@@ -25,6 +26,8 @@ $(document).ready(function() {
 		$('#revealCard').click(function() {
 
 			$('#phaseTitle').html("<h2>Revealing Phase</h2>");
+
+			$('#revealCard').hide();
 
 			// swap the card image front/back 
 
